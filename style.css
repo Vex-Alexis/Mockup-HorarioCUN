@@ -1,0 +1,96 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #3498db;
+    font-size: 2em;
+}
+
+p {
+    color: #555;
+}
+
+.schedule {
+    margin: 16px 24px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 10px;
+    border-collapse: collapse;
+    
+}
+
+.day, .time, .class {
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+/* Estilo para el encabezado de columna */
+.day {
+    font-weight: bold;
+    background-color: #3498db;
+    color: #fff;
+}
+.time-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.time {
+    font-weight: bold;
+    background-color: #3498db;
+    color: #fff;
+    border-color: #3498db;
+    display: inline-block;
+}
+
+.class {
+    cursor: pointer;
+}
+
+/* Efectos al pasar el ratón */
+.class:hover {
+    background-color: #3498db;
+    color: #fff;
+    transform: scale(1.05);
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+
+
+
+
+
+
+
+.custom-table {
+    border-collapse: separate; /* Permite bordes separados para las celdas */
+    border-spacing: 10px;
+    width: 100%;
+}
+
+.custom-table th, .custom-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    /* margin-right: 5px; */
+}
+.custom-table th {
+    background-color: #f2f2f2; /* Fondo gris claro para las celdas del encabezado */
+}
